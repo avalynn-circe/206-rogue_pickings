@@ -197,9 +197,36 @@ footer span {
 }
  
 @media all and (min-width:1200px) {
-    /* Desktop styles here */
+	/* Desktop styles here */
+	header {
+		height: 110px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header h1 {
+		text-align: left;
+		margin: 0;
+		border-bottom: none;
+	}
+
 	header nav ul {
 		display: flex;
 		justify-content: space-between;
+	}
+
+	header nav ul li {
+		padding: 0 10px;
+	}
+
+	.section-one,
+	.section-two, 
+	.section-three {
+		width: 33%;
+	}
+
+	.section-two {
+		order: initial;
 	}
 }
